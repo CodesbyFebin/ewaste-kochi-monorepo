@@ -1,0 +1,66 @@
+            - name: Deploy to Vercel Action
+  # You may pin to the exact commit or the version.
+  # uses: BetaHuhn/deploy-to-vercel-action@9893d875c782e1b4995a9399e8c4d660c33849c3
+  uses: BetaHuhn/deploy-to-vercel-action@v1.10.0
+  with:
+    # GitHub Token which will be used to authenticate with the GitHub API.
+
+    GITHUB_TOKEN: # optional
+    # Vercel Token which will be used with the Vercel CLI.
+
+    VERCEL_TOKEN: # optional
+    # Id of your Vercel project (can be found in .vercel/project.json).
+
+    VERCEL_PROJECT_ID: # optional
+    # Id of your Vercel organisation (can be found in .vercel/project.json).
+
+    VERCEL_ORG_ID: # optional
+    # Create a production deployment (default: true, false for PR deployments).
+
+    PRODUCTION: # optional
+    # Deploy a prebuilt Vercel Project (default: false).
+
+    PREBUILT: # optional
+    # Create a deployment on GitHub (default: true).
+
+    GITHUB_DEPLOYMENT: # optional
+    # Create PR comment when deploying (default: true).
+
+    CREATE_COMMENT: # optional
+    # Delete existing PR comment when redeploying PR (default: true).
+
+    DELETE_EXISTING_COMMENT: # optional
+    # Attach metadata about the commit to the Vercel deployment (default: true).
+
+    ATTACH_COMMIT_METADATA: # optional
+    # Allow PRs which originate from a fork to be deployed (default: false).
+
+    DEPLOY_PR_FROM_FORK: # optional
+    # Labels which will be added to the pull request once deployed. Set it to false to turn off (default: deployed).
+
+    PR_LABELS: # optional
+    # Assign alias domain(s) to the deployment.
+
+    ALIAS_DOMAINS: # optional
+    # Assign a custom domain to the PR preview deployment.
+
+    PR_PREVIEW_DOMAIN: # optional
+    # Execute commands from a different Vercel team or user.
+
+    VERCEL_SCOPE: # optional
+    # Custom environment for GitHub deployment.
+
+    GITHUB_DEPLOYMENT_ENV: # optional
+    # When passing meta data to Vercel deployment, trim the commit message to subject only (default: false).
+
+    TRIM_COMMIT_MESSAGE: # optional
+    # Provide environment variables to the build step.
+
+    BUILD_ENV: # optional
+    # Working directory for the Vercel CLI.
+
+    WORKING_DIRECTORY: # optional
+    # Used to skip the build cache.
+
+    FORCE: # optional
+          
